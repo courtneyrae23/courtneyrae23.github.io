@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+ <head>
+   <title> Courtney Pasco | Life </title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="life.css">
+ </head>
+ <body ng-app="myApp" ng-controller="myCtrl">
+    <nav id="nav" class="nav-colored">
+      <div class = "menu">
+        <div class="menu-link">
+          <a href="index.html"><img class="header" id="logo" src="Images/logo3.png"></a>
+        </div>
+      <div class="menu-link text">
+        <div class="text-link">
+          <a href="experience.html"> <span> &#60; </span> Experience <span> &#62; </span> </a>
+        </div>
+      </div>
+      <div class="menu-link text">
+        <div class="text-link">
+          <a href="academics.html"> <span> &#60; </span> Academics <span> &#62; </span> </a>
+        </div>
+      </div>
+      <div class="menu-link text current">
+        <div class="text-link">
+          <a href="life.html"> <span> &#60; </span> Life <span> &#62; </span> </a>
+        </div>
+      </div>
+  </nav>
+  <div id="scrollUp"> <img src="Images/arrowUp.png"> </div>
+  <div class="container">
+    <div class="book" id="one" ng-click="toggleModal()"><p> Memoirs of an Avid Traveler</p> </div>
+    <div class="book" id="two" ng-click="toggleModal()"><p> Potential Surgeon: An Autobiography</p></div>
+    <div class="book" id= "three" ng-click="toggleModal()"><p> The Aspiring Italian Speaker </p></div>
+    <div class="book" id="four" ng-click="toggleModal()"><p> My Story: The Mediocre Athelete </p> </div>
+    <div class="book" id="five" ng-click="toggleModal()"><p> CHRONICLES OF A DILETTANTE</p></div>
+    <img src="Images/life.png">
+  </div> 
+  <modal-dialog show='modalShown1'>
+    <div class="travel-text">
+      I did not get the chance to explore the world beyond the United States until just a few years ago, but now I can't picture myself doing anything else (money and time allowing). <br><br>
+      In the summer of 2014, I spent a month in Europe, partly traveling with my family who was stationed at a U.S. Navy base in Naples, and partly doing some solo exploring beyond Italy.  I went from sunny beaches to snow-covered peaks to narrow city streets and became enamored with the people, food, and diversity of Europe. <br><br>
+       I returned in the summer of 2015 for the 9 days I had off between my spring semester and summer classes. Again I traveled a bit with family in Italy before striking off on my own and visting Barcelona. <br><br>
+        In the summer of 2016 I decided to cross a couple of things off of my bucket list and headed to South Africa for two months to learn web development and to dive with sharks (among other adventures).<br><br>  
+       Now, I've just returned from safari with my mother and her extended family (my aunts, uncles, and cousins).  We spent 11 days in Tanzania blown away by elephants, baboons, giraffes, hippos, lions, cheetahs, leopards, zebras, and more.  Then my mother and I continued on to Rwanda to trek the gorillas and golden monkeys.  
+    </div>
+    <div class="image-box">
+      <div class="prev" onclick="plusTravelSlides(-1)"> <img src="Images/arrowLeft.png"> </div>
+      <div class="main-image" id="travel-image"> 
+        <div class="caption">
+          <div id="country-image"> </div>
+          <div id="caption-text"> 
+            Rome is my favorite city in the world. The streets are drenched in history and you can hardly turn a corner without walking past a breathtaking relic.
+          </div> 
+        </div>
+      </div>
+      <div class="next" onclick="plusTravelSlides(1)"> <img src="Images/arrowRight.png"> </div>
+    </div>
+  </modal-dialog>
+
+  <modal-dialog show='modalShown2'>
+    <div class="med-photo"></div>
+    <div class="med-text"> When I was younger and people asked me what I wanted to be when I grew up, 'doctor' was always the answer I gave. I spent my free time learning the bones in the body and studying the brain. I interned at John Muir Hospital in high school.  Computer Science was never a part of my plan; I fell in love with it in college and suddenly my whole life trajectory was called into question. I have not ruled out attending medical school in the future and I continue to explore the medical field in my free time. <br> <br>
+
+    In college, I took on the pre-med curriculum in addition to my two majors. Pre-med courses consist of two years of chemistry, a year of biology, a year of physics, a year of calculus, a year of English, a semester of psychology, and a semester of statistics. <br> <br>
+
+    Though it was not one of the pre-med courses, I took Human Anatomy and absolutely loved it.  The only thing more exciting to me than computers and their capabilities is the human body.  Each tiny organ or structure fits together seamlessly to process and respond to every stimulus we get from the moment we are born until the day we die.  My passion for this class and its lab, where we got to observe human cadavers, led me to become a Undergraduate Student Instructor for two semesters. It has been a privilege to share my excitement and knowledge with other students at Berkeley. <br> <br>
+
+    For the last two years, I have volunteered at Highland Hospital, a county hospital in Oakland. I am currently volunteering in the Emergency Department and I am incredibly grateful for the training and experience. I have the opportunity to perform CPR, administer EKGs, observe traumas and procedures in the cath lab, and most importantly, work alongside the brilliant and tireless doctors and nurses at Highland.  After a year of volunteering, I applied for and was accepted to the Operating Room Experience (OREX), a program that allows me to observe surgeries for one day every month.  Read one of my reflections <a href="https://docs.google.com/document/d/1ohA-HGG-N50pDo8TfbAxTSYvzHtOES90iyt7ggBZFXw/edit?usp=sharing"> here. </a> 
+  </div>
+  </modal-dialog>
+
+  <modal-dialog show='modalShown3'>
+    <div class="photo-bar">
+      <div class="italy-photo" id="photo1"> </div>
+      <div class="italy-photo" id="photo2"> </div>
+      <div class="italy-photo" id="photo3"> </div>
+      <div class="italy-photo" id="photo4"> </div>
+    </div>
+    <div class="italy-text">
+      When my uncle and his family were stationed at the U.S. Naval base in Naples, Italy, I began to learn Italian in preparation for my visit.  At Berkeley, I took Italian 1-4 in the span of a couple years. Dr. Mara Mauri Jacobsen, my professor for Italian 3 and 4, was brilliant, funny, and determined not to make our classes about simple grammar exercises. In Italian 3 we looked at the history of feminism in Italy.  We watched movies, wrote essays, read articles, and had meaningful discussions about our own personal experiences with sexism. In Italian 4 we studied the rise of fascism in Italy just prior to WWII. We continued to watch movies and write essays, but we also read an entire novel, 'Sostiene Pereira,' chapter by chapter and discussed each one at length. Read my presentation on Italian scientists during WWII <a href="https://docs.google.com/document/d/1wGePRNz_YYADHsxGylGou75GsmsU9FkS1CfNE5ELeqY/edit?usp=sharing"> here.</a>  In my final year at Berkeley, I took an Italian conversation class, also led by Mara. Twelve of us sat around a conference table and were tasked with debating articles about controversial issues. By the end of the year, we had each written our own presentations on topics of our own choice and then facilitated a discussed how Italy was handling the issue.  Now that I'm out of school, it's been difficult to keep up with my Italian when I'm not using it regularly. But I have a passion for the language and culture of Italy and it is one of my dreams to live there for a few years and truly immerse myself in it all.      
+    </div>
+  </modal-dialog>
+
+  <modal-dialog show='modalShown4'>
+    <div class="prev" id="card" onclick="plusCards(-1)"> <img src="Images/arrowLeft.png"> </div>
+    <div class="cards">
+      <div class="card-front" id="sport-pic"></div>
+      <div class="card-back"> <p id="sport-text">I've been in and out of organized sports my entire life.  I started with  tee-ball and was convinced I had found my calling: I was going to be a professional baseball player when I grew up. Of course that dream went out the window when I learned that women cannot play baseball and my tee-ball career went with it when I learned I would have to transition to softball the following year.</p></div>
+  </div>
+    </div>
+    <div class="next" id="card" onclick="plusCards(1)"> <img src="Images/arrowRight.png"> </div>
+  </modal-dialog>
+
+  <modal-dialog show='modalShown5'>
+      <div id="art-text"><p> I am not a great artist, I'll be the first to admit.  I do not have the kind of creativity that drives people to push limits or construct works of art from just what they see in their mind.  That being said, I truly appreciate those who do have that gift and I occasionally like to take a stab at it myself.  My favorite medium is oil paints--there is nothing that calms me quite like the smell of oil paints.  Truthfully, though, I prefer oils because they're a forgiving medium.  If I don't like the way something turned out, I can wait a few days for it to dry and then paint over it; the perfectionist in me likes that safety net. <br><br>
+      I don't really have names for any of my pieces, but my favorite is the one of the ship on a rough sea.  In college, I worked in the dorm mailroom and we had one particularly bad day where we were making blunder after blunder.  Our boss, who was a student too, sent out an email to all of us outlining new procedures that would be implemented to ensure we didn't make the same mistakes again.  Rather than express her disappointment in us, she closed the email with the FDR quote, "A smooth sea never made a skilled sailor."  From that point on, this has been my mantra and during one of my more tumultuous semesters, I took some time to make myself a visual reminder of that.  </p></div>
+      <div class="art-box"> 
+        <div class="art painting1"></div>
+        <div class="art painting2"></div>
+        <div class="art painting3"></div>
+        <div class="art painting4"></div>
+      </div>
+  </modal-dialog>
+
+
+
+
+  <div class="footer">
+    <div class="mission">
+      Nerds like us, are allowed to be unironically enthusiastic about stuff. Nerds are allowed to love stuff, like, jump-up-and-down-in-your-chair-can't-control-yourself love it. <br><br> -John Green
+    </div>
+    <div class="linkcontainer">
+      <a id="resume"><div class="footerlinks"> <div class="resume"> </div> </div></a>
+      <a href="mailto:courtneypasco23@yahoo.com"> <div class="footerlinks"> <div class="email"></div></div></a>
+      <a href="https://www.facebook.com/courtney.pasco.9"> <div class="footerlinks"> <div class="facebook"></div></div></a>
+      <a href="https://github.com/courtneyrae23"> <div class="footerlinks"> <div class="github"></div></div></a>
+    </div>
+    <img id="logo2" src="Images/logo4.png">
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+  <script src="angular-route.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="script.js"></script> 
+ </body>
+</html>

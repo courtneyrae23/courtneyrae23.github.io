@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+ <head>
+   <title> Courtney Pasco | Academics </title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="academics.css">
+ </head>
+ <body ng-app="myApp" ng-controller="myCtrl">
+  <nav id="nav" class="nav-colored">
+    <div class = "menu">
+      <div class="menu-link">
+        <a href="index.html"><img class="header" id="logo" src="Images/logo3.png"></a>
+      </div>
+      <div class="menu-link text">
+        <div class="text-link">
+          <a href="experience.html"> <span> &#60; </span> Experience <span> &#62; </span> </a>
+        </div>
+      </div>
+      <div class="menu-link text current">
+        <div class="text-link">
+          <a href="academics.html"> <span> &#60; </span> Academics <span> &#62; </span> </a>
+        </div>
+      </div>
+      <div class="menu-link text">
+        <div class="text-link">
+          <a href="life.html"> <span> &#60; </span> Life <span> &#62; </span> </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div id="scrollUp"> <img src="Images/arrowUp.png"> </div>
+  <div class="container">
+    <div class="title">U.C. Berkeley, Class of December 2016</div>
+    <div class="major"> 
+      <div class="subtitle"> B.A. Cognitive Science </div> 
+      <span> Cognitive Science at U.C. Berkeley is a compilation of classes from six fields:  Neuroscience, Psychology, Linguistics, Computer Science, Philosophy, and Sociology. The ideology behind this is that each field individually contributes a unique perspective of the brain and to get a full picture, we must be well-versed in all of these subjects. My favorite classes included Psychology of Sleep, Computational Modelling of Cognition, and Introduction to Linguistics. </span>
+    </div>
+    <div class="brain"><img src="Images/brain.png"> </div>
+    <div class="major">
+      <div class="subtitle"> B.A. Computer Science </div> 
+      <span> U.C. Berkeley's Computer Science program is a comprehensive, competitive major.  Before officially declaring C.S., students take courses in linear algebra, basic computer science principles, data structures, and machine structures and gain experience in Python, Java, and C. Upper Division courses are even more dynamic and require quickly learning new languages and concepts. My favorite classes included Introduction to Design, Computer Graphics, and Machine Learning.  </span>
+    </div>
+    <div class="title">Favorite Projects</div>
+    <modal-dialog show='modalPicShown'></modal-dialog>
+    <div class="project-pic" id="project1" ng-click="toggleModalPic()"> <img src='Images/beecalm.png'></div>
+    <div class="project-pic" id="project2" ng-click="toggleModalPic()"> <img src='Images/xacts.png'> </div>
+    <div class="project-pic" id="project3" ng-click="toggleModalPic()"> <img src='Images/raytrace.png'></div>
+    <div class="project-pic" id="project4" ng-click="toggleModalPic()"> </div>
+    <div class="project-pic" id="project5" ng-click="toggleModalPic()"> </div>
+    <div class="project-pic" id="project6" ng-click="toggleModalPic()"> </div>
+    <div class="project-pic" id="project7" ng-click="toggleModalPic()"> </div>
+    <div class="project-pic" id="project8" ng-click="toggleModalPic()"> </div>
+    
+    <modal-dialog show='modalShowProject1'>
+      <div class="bubble-image"> </div>
+      <div class="details">
+        <div class="project-title"> BeeCalm Android Mobile/Wear App </div>
+        <div class="course-title"> Introduction to User Interface Design (CS160) </div>
+        <a href="https://github.com/courtneyrae23/BeeCalm">
+          <div class="github-link">
+            <div class="github-icon"><img src='Images/github.png'></div>
+            <div class="github-text"> View on Github </div>
+          </div>
+        </a>  
+        <div class="collaborators"> <b>Collaborators:</b>&nbsp;&nbsp; Ilakya Palanisamy &middot; Fendy Soegiono &middot; Zhuosi Wang &middot; Stephanie Lin</div>
+      </div>  
+      <div class="project-description">
+        This course was split into two distinct pieces: the first half consisted of lectures on the design process and individual projects of Android mobile and watch coding, while the second half of the course saw us divided into groups and working through the entire design process on a final project.  The day we met our groups, we began the brainstorming process with only the constraints of 'Android watch' and 'medical field' to narrow down our focus.  Our team eventually settled on a discreet app that people struggling with panic attacks can use to calm down whilst fighting one off.  We went through several iterations of the design cycle, beginning with low-fidelity paper models and working our way up to high-fidelity mock-ups in Figma, conducting user interviews at each step. The final app was designed as a multifaceted tool for those with panic disorder. Our user interviews taught us that different strategies work for different people so we developed a collection of techniques that could be used to either calm the mind or calm the body: deep breathing exercises guided by an expanding and contracting moving amorphous shape; a basic colorful version of 'Simon Swipe'; mantras that the user can record themselves or a loved one saying for later playback; a collection of yoga poses; and a simple display of the user's heartrate so they can practice biofeedback and actively try to lower it. For a brief overview of our entire process, check out our presentation <a href="https://docs.google.com/presentation/d/1BwQ4MVP-lueEdBGIV6NPBVo2XFqEBRZR5UgqN05Xtj4/edit?usp=sharing"> here </a>. 
+      </div>
+    </modal-dialog>
+
+    <modal-dialog show='modalShowProject2'>
+      <div class="bubble-image"> </div>
+      <div class="details">
+        <div class="project-title"> Transactions and Concurrency Control </div>
+        <div class="course-title"> Introduction to Database Systems (CS186) </div>
+        <a href="https://github.com/courtneyrae23/Lock-Tables">
+          <div class="github-link">
+            <div class="github-icon"><img src='Images/github.png'></div>
+            <div class="github-text"> View on Github </div>
+          </div>
+        </a>
+        <div class="collaborators"> <b>Collaborators:</b>&nbsp;&nbsp; None, though please note the pieces written by the course staff</div>  
+      </div>  
+      <div class="project-description">
+        I walked into CS186 thinking it was going to be a dull, but necessary class considering how much our world is becoming reliant on data. I was surprised to find how much I actually enjoyed the material and how interesting I found the challenges of querying, sorting, and accessing huge amounts of data concurrently. I was struck by the ingenuity of the solutions to these problems. One of my favorite projects in this class required us to build a lock table system to handle multiple transactions (series of reads and writes to the database). The system we wrote followed strict two-phase locking.  In Strict 2PL, transactions acquire shared locks for reading and exclusive locks for writing and they release all of their locks immediately upon a commit or abort, allowing the next transaction in line to aquire them.  With a system like this, it is possible for a deadlock to occur.  For example if Transaction 1 is reading page A while Transaction 2 is writing to page B and then T1 wishes to read page B while T2 is waiting to write to page A, a deadlock has been formed. T1 will not give up any of its locks until is has read A and B, however it cannot aquire the lock for B because T2 has it and won't give it up until it can write to A which it cannot do while T1 has that lock. With deadlocks, one can either set up a system to avoid them or to detect them and in this project, we implemented deadlock detection.  I created and maintained a 'Waits-For' graph depicting which transactions were waiting for locks from which transactions and I checked for cycles in the graph.  If a cycle was detected, this signalled a deadlock and one of the involved transactions was aborted.
+      </div>
+    </modal-dialog>
+
+    <modal-dialog show='modalShowProject3'>
+      <div class="bubble-image"> </div>
+      <div class="details">
+        <div class="project-title"> Raytracing </div>
+        <div class="course-title"> Fundamentals of Computer Graphics (CS184) </div>
+        <a href="https://github.com/courtneyrae23/RayTracer">
+          <div class="github-link">
+            <div class="github-icon"><img src='Images/github.png'></div>
+            <div class="github-text"> View on Github </div>
+          </div>
+        </a>
+        <div class="collaborators"> <b>Collaborators:</b>&nbsp;&nbsp; Matthew Quinn</div>  
+      </div>  
+      <div class="project-description">
+        Computer Graphics was an incredibly intimidating course for me.  I was taking linear algebra concurrently so I did not have the strong mathematics background the course demanded.  However, I was fascinated by the subject material and told myself I would just teach myself the mathematics as I went along.  I am so grateful I decided to stick with it because it became one of the best classes I have taken at U.C. Berkeley. It was not an easy course, but the understanding and appreciation of the work that goes into graphics we see all around us made it well worth it. This project in particular was hands-down the most challenging project I've ever had to do.  We had learned about raytracing in class for a couple of lectures and a discussion before Professor O'Brien told us to build one ourselves from scratch.  Armed with only a design note and a journal of the project from a previous student, Matt and I felt lost for two of the four weeks we had to complete the assignment. We began by writing the simple classes: rays, points, matrices, colors, etc. Matt spent a week writing an entire set of linear algebra classes for us to use. Eventually, after sitting in office hours and spending some long days (and nights) sketching on the whiteboard, coding, and debugging, we managed to pull off the project I am most proud of to this date. Our raytracer takes in a file with the position of the camera, position and types of lights, materials and positions of shapes. It then sends a ray through each pixel of the scene and if it intersects with a shape, calculates what to display, taking into account shadows, reflections, material, etc. 
+      </div>
+    </modal-dialog>
+
+    <div class="title">Additional Acheivements</div>
+    <div class="pic-scroll">
+      <div class="innerbox">
+          <div class="prev" onclick="plusSlides(-1)"> <img src="Images/arrowLeft.png"> </div>
+          <div class="icon" id="icon1"></div>
+          <div class="icon-text" id="icon-text1"> I am proud and honored to call myself a member of Phi Beta Kappa since 2015. Founded in 1776, Phi Beta Kappa invites the top 10% of liberal arts and sciences students at select universities to join this honors society.  It is both humbling and inspiring to share this status with past U.S. Presidents, Supreme Court Justices, and Nobel Laureates. </div>
+          <div class="icon" id="icon2"></div>
+          <div class="icon-text" id="icon-text2"> In December, 2016 I graduated from U.C. Berkeley with High Honors and a GPA of 3.936. </div>
+          <div class="icon" id="icon3"></div>
+          <div class="icon-text" id="icon-text3"> For 4 weeks in the summer of 2016 I studied web development in Cape Town, South Africa through the program I_Xperience. It was one of the most useful skills I have learned and in the most beautiful setting too! Our studies were punctuated by hikes up Table Mountain, diving with Great White Sharks, and surfing at the picturesque Muizenberg beach. </div>
+          <div class="next" onclick="plusSlides(1)"> <img src="Images/arrowRight.png"> </div>
+        <br>
+      </div>
+    </div>
+  </div> 
+  <div class="footer">
+    <div class="mission">
+      Think only of the best, work only for the best, and expect only the best. Forget the mistakes of the past and press on to the greater achievements of the future. <br> <br> -Christian D. Larson 
+    </div>
+    <div class="linkcontainer">
+      <div class="footerlinks"> <div class="resume"></div> </div>
+      <div class="footerlinks"> <div class="email"></div> </div>
+      <a href="https://www.facebook.com/courtney.pasco.9"> <div class="footerlinks"> <div class="facebook"></div></div></a>
+      <a href="https://github.com/courtneyrae23"> <div class="footerlinks"> <div class="github"></div></div></a>
+    </div>
+    <img id="logo2" src="Images/logo4.png">
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+  <script src="angular-route.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="script.js"></script> 
+ </body>
+</html>
