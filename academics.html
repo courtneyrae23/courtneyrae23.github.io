@@ -9,7 +9,7 @@
   <nav id="nav" class="nav-colored">
     <div class = "menu">
       <div class="menu-link">
-        <a href="index.html"><img class="header" id="logo" src="Images/logo3.png"></a>
+        <a href="index.html"><img class="header" id="logo" src="Images/logo6.png"></a>
       </div>
       <div class="menu-link text">
         <div class="text-link">
@@ -42,14 +42,14 @@
     </div>
     <div class="title">Favorite Projects</div>
     <modal-dialog show='modalPicShown'></modal-dialog>
-    <div class="project-pic" id="project1" ng-click="toggleModalPic()"> <img src='Images/beecalm.png'></div>
+    <div class="project-pic" id="project1" ng-click="toggleModalPic()"> <img src='Images/beecalm-main.png'></div>
     <div class="project-pic" id="project2" ng-click="toggleModalPic()"> <img src='Images/xacts.png'> </div>
     <div class="project-pic" id="project3" ng-click="toggleModalPic()"> <img src='Images/raytrace.png'></div>
-    <div class="project-pic" id="project4" ng-click="toggleModalPic()"> </div>
-    <div class="project-pic" id="project5" ng-click="toggleModalPic()"> </div>
-    <div class="project-pic" id="project6" ng-click="toggleModalPic()"> </div>
-    <div class="project-pic" id="project7" ng-click="toggleModalPic()"> </div>
-    <div class="project-pic" id="project8" ng-click="toggleModalPic()"> </div>
+    <div class="project-pic" id="project4" ng-click="toggleModalPic()"> <img src='Images/horse-graph.png'></div>
+    <div class="project-pic" id="project5" ng-click="toggleModalPic()"> <img src='Images/ik.png'></div>
+    <div class="project-pic" id="project6" ng-click="toggleModalPic()"> <img src="Images/bezier.png"> </div>
+    <div class="project-pic" id="project7" ng-click="toggleModalPic()"> <img src="Images/shading.png"></div>
+    <div class="project-pic" id="project8" ng-click="toggleModalPic()"> <img src="Images/pacman.png"></div>
     
     <modal-dialog show='modalShowProject1'>
       <div class="bubble-image"> </div>
@@ -105,6 +105,42 @@
       </div>
     </modal-dialog>
 
+        <modal-dialog show='modalShowProject4'>
+      <div class="bubble-image"> </div>
+      <div class="details">
+        <div class="project-title"> Horse </div>
+        <div class="course-title"> Efficient Algorithms and Intractable Problems (CS170) </div>
+        <a href="https://github.com/courtneyrae23/Horse">
+          <div class="github-link">
+            <div class="github-icon"><img src='Images/github.png'></div>
+            <div class="github-text"> View on Github </div>
+          </div>
+        </a>
+        <div class="collaborators"> <b>Collaborators:</b>&nbsp;&nbsp; Caroline Kim &middot; Emily Pedersen &middot; Ruihan Zhao</div>  
+      </div>  
+      <div class="project-description">
+        Efficient Algorithms was one of the toughest, most useful classes I took at U.C. Berkeley. We covered everything from divide and conquer algorithms to dynamic and linear programming. All of this culminated in a single final project in which we attempted to find a high-performing approximate solution to an NP-hard problem.  The premise was as follows: you are given a graph of horses that you must divide into teams.  A horse can be on a team with another horse if there is a directed edge connecting one to the other.  Each horse has a performance value and the total performance value of the team is equal to the sum of the values of individual horses, multiplied by the number of horses on the team. The algorithm we implemented to solve this problem was a greedy one with certain optimizations.  For example, if the graph had fewer tham 15 horses, we ran a brute force algorithm on it to come up with every possible combination of teams before choosing the set with the highest performance value.  However, the graphs could have up to 500 horses so brute force quickly became infeasible.  Instead we gave each horse the chance to be the 'start' node if it had outgoing edges and then formed the highest-value possible team with that node.  Then we deleted the path from the graph and randomly picked a new start node and continued.  If the graph had 500 horses, we formed 500 sets of teams and then picked the highest value set. See the README on Github for more details. 
+      </div>
+    </modal-dialog>
+
+    <modal-dialog show='modalShowProject5'>
+      <div class="bubble-image"> </div>
+      <div class="details">
+        <div class="project-title"> Inverse Kinematics </div>
+        <div class="course-title"> Fundamentals of Computer Graphics (CS184) </div>
+        <a href="https://github.com/courtneyrae23/InverseKinematics">
+          <div class="github-link">
+            <div class="github-icon"><img src='Images/github.png'></div>
+            <div class="github-text"> View on Github </div>
+          </div>
+        </a>
+        <div class="collaborators"> <b>Collaborators:</b>&nbsp;&nbsp; Matthew Quinn </div>  
+      </div>  
+      <div class="project-description">
+        The goal of this project was to solve an inverse kinematics problem for an arm of at least four links, connected by ball joints.  An inverse kinematics problem consists of calculating each joint angle such that the end effector (tip of the arm) is in a desired location.  Our final product was an animation that demonstrated the arm tracking a goal that moved along a non-linear path.  
+      </div>
+    </modal-dialog>
+
     <div class="title">Additional Acheivements</div>
     <div class="pic-scroll">
       <div class="innerbox">
@@ -130,7 +166,7 @@
       <a href="https://www.facebook.com/courtney.pasco.9"> <div class="footerlinks"> <div class="facebook"></div></div></a>
       <a href="https://github.com/courtneyrae23"> <div class="footerlinks"> <div class="github"></div></div></a>
     </div>
-    <img id="logo2" src="Images/logo4.png">
+    <img id="logo2" src="Images/logo7.png">
   </div>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
   <script src="angular-route.js"></script>

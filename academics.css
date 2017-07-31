@@ -204,20 +204,20 @@ body {
 }
 
 .project-pic:hover {
-  box-shadow: 0 0 10px 3px #333333;
+  box-shadow: 0 0 10px 3px #888888;
 }
 
 #project1 img {
   position: absolute;
-  left: 1vw;
+  left: 2vw;
   top: 50%;
   transform: translateY(-50%);
-  width: 18vw;
+  width: 16vw;
 
 }
 
 #project1 {
-  background-color: #fff6b0;
+  background-color:  #99abac;
 }
 
 #project2 img {
@@ -230,16 +230,84 @@ body {
 }
 
 #project2 {
-  background-color: white;
+  background-color: #aaae8e;
 }
 
 #project3 img {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 20vw;
+  left: 3vw;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 14vw;
 }
 
+#project3 {
+  background-color: #99abac;
+}
+
+#project4 img {
+  position: absolute;
+  left: 3vw;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 14vw;
+}
+
+#project4 {
+  background-color: white;
+}
+
+#project5 img {
+  position: absolute;
+  left: 3vw;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 14vw;
+}
+
+#project5 {
+  background-color: #d8dacb;
+
+}
+
+#project6 img {
+  position: absolute;
+  left: 3vw;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 14vw;
+}
+
+#project6 {
+  background-color: white;
+
+}
+
+#project7 img {
+  position: absolute;
+  left: 3vw;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 14vw;
+}
+
+#project7 {
+  background-color: #3a606e;
+
+}
+
+#project8 img {
+  position: absolute;
+  left: 3vw;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 14vw;
+}
+
+#project8 {
+  background-color: #607b7d;
+
+}
 
 .bubble-image {
   float: left;

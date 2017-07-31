@@ -269,6 +269,8 @@ app.controller('myCtrl', function($scope) {
       $('.ng-modal-overlay').css( "height", $(document).height());
       if (this.id == 'project1') {
         $scope.modalShowProject1 = !$scope.modalShowProject1;
+        $('.bubble-image').css( "backgroundImage", "url(Images/beecalm-watch.png)");
+        $('.bubble-image').css( "backgroundSize", "contain");
       } else if (this.id == 'project2') {
         $scope.modalShowProject2 = !$scope.modalShowProject2;
         $('.bubble-image').css( "backgroundImage", "url(Images/waitsfor.png)");
@@ -276,6 +278,10 @@ app.controller('myCtrl', function($scope) {
         $('.bubble-image').css( "boxShadow", "none");
       } else if (this.id == 'project3') {
         $scope.modalShowProject3 = !$scope.modalShowProject3;
+        $('.bubble-image').css( "backgroundImage", "url(Images/raytrace2.png)");
+        $('.bubble-image').css( "boxShadow", "none");
+      } else if (this.id == 'project4') {
+        $scope.modalShowProject4 = !$scope.modalShowProject4;
         $('.bubble-image').css( "backgroundImage", "url(Images/raytrace2.png)");
         $('.bubble-image').css( "boxShadow", "none");
       }

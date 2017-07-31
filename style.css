@@ -1,0 +1,87 @@
+@import url(https://fonts.googleapis.com/css?family=Cardo|Josefin+Sans);
+
+
+/* General */
+
+body {
+	background-image: url("Images/main.JPG");
+	background-size: cover;
+  	background-position: left center;
+  	background-repeat: no-repeat;
+  	height: 100vh;
+  	width: 100vw;
+}
+
+
+.container {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+
+.main-logo {
+	width: 20vw;
+	height: 20vw;
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+	background-image: url("Images/logo5.png");
+	background-size: contain;
+  	background-position: center center;
+  	background-repeat: no-repeat;
+
+}
+
+.main-links {
+	margin-top: 10vw;
+	position: relative;
+}
+
+.menu-link {
+  margin-left: 50px;
+  margin-right: 50px;
+  position: relative;
+  top: 50%;
+  float:left;
+  transform: translateY(-50%);
+}
+
+.menu-link a:link {
+  color: #607B7D;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 28px;
+  text-decoration: none;
+}
+
+.menu-link a:hover {
+  color: #607B7D;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 28px;
+  text-decoration: none;
+}
+
+.menu-link a:visited {
+  color: #607B7D;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 28px;
+  text-decoration: none;
+}
+
+.menu-link a:active {
+  color: #607B7D;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 28px;
+  text-decoration: none;
+}
+
+.text span {
+  color: #607B7D;
+  opacity: 0;
+  transition: all .3s;
+}
+
+.text:hover span {
+  opacity: 1;
+  transition: all .3s;
+}

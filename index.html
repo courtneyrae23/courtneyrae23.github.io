@@ -3,12 +3,31 @@
  <head>
    <title> Courtney Pasco </title>
    	<link rel="stylesheet" href="normalize.css">
-    <!-- <link rel="stylesheet" href="main.css"> -->
+    <link rel="stylesheet" href="style.css">
     <link href='https://actionnetwork.org/css/style-embed.css' rel='stylesheet' type='text/css' />
 	  <script src="https://www.gstatic.com/firebasejs/3.6.7/firebase.js"></script>
  </head>
- <body ng-app="myApp">
-  <div ng-view></div>
+ <body ng-app="myApp" ng-controller="myCtrl">
+ <div class="container"> 
+  <div class="main-logo"> </div>
+  <div class="main-links"> 
+    <div class="menu-link text">
+      <div class="text-link">
+        <a href="experience.html"> <span> &#60; </span> Experience <span> &#62; </span> </a>
+      </div>
+    </div>
+    <div class="menu-link text">
+      <div class="text-link">
+        <a href="academics.html"> <span> &#60; </span> Academics <span> &#62; </span> </a>
+      </div>
+    </div>
+    <div class="menu-link text">
+      <div class="text-link">
+        <a href="life.html"> <span> &#60; </span> Life <span> &#62; </span> </a>
+      </div>
+    </div>
+  </div>
+ </div> 
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
   <script src="angular-route.js"></script>
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
